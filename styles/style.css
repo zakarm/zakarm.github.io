@@ -1,9 +1,3 @@
-@font-face {
-    font-family: 'TanseekModernProArabic-Medium';
-    src: url('./assets/fonts/TanseekModernProArabic-Medium.ttf') format('truetype');
-  }
-
-
 .navbar-nav .nav-link {
   position: relative;
   transition: all 0.3s ease;
@@ -138,7 +132,7 @@ footer a:hover::before {
     color: white;
   }
 
-    .navbar {
+  .navbar {
       background-color: black;
       padding: 10px;
   }
@@ -167,37 +161,6 @@ footer a:hover::before {
     margin-bottom: 20px;
 }
 
-
-
-#projects .card {
-    background-color: #222;
-    color: #ccc;
-    padding: 20px;
-    margin-bottom: 20px;
-}
-
-#contact form {
-    max-width: 500px;
-    margin: 0 auto;
-}
-
-#contact input,
-#contact textarea {
-    background-color: #333;
-    color: #ccc;
-    border: none;
-    padding: 10px;
-    margin-bottom: 10px;
-    width: 100%;
-}
-
-#contact button {
-    background-color: #555;
-    color: #ccc;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-}
   
   @media (max-width: 767px) {
     nav ul {
