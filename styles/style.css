@@ -2,7 +2,51 @@
     font-family: 'TanseekModernProArabic-Medium';
     src: url('./assets/fonts/TanseekModernProArabic-Medium.ttf') format('truetype');
   }
-  
+
+
+.navbar-nav .nav-link {
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after {
+  transform: scaleX(1);
+}
+
+footer a {
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+footer a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+footer a:hover::before {
+  border-color: #fff;
+  transform: scale(1.2);
+}
+
   body {
     background-color: black;
     font-family: 'TanseekModernProArabic-Medium', sans-serif;
@@ -93,6 +137,67 @@
     text-decoration: none;
     color: white;
   }
+
+    .navbar {
+      background-color: black;
+      padding: 10px;
+  }
+
+  .navbar-brand {
+      color: white;
+      font-size: 30px;
+  }
+
+  .navbar-nav .nav-link {
+      color: white;
+      margin-left: 20px;
+  }
+
+  .navbar-toggler {
+      border-color: white;
+  }
+
+  .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255, 255, 255, 0.9)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  }
+
+  .section-title {
+    color: white;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+
+
+#projects .card {
+    background-color: #222;
+    color: #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#contact form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#contact input,
+#contact textarea {
+    background-color: #333;
+    color: #ccc;
+    border: none;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+#contact button {
+    background-color: #555;
+    color: #ccc;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
   
   @media (max-width: 767px) {
     nav ul {
