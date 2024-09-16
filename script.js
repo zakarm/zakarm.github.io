@@ -1,3 +1,17 @@
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+  event.preventDefault();
+
+  var name = document.getElementById('name').value;
+  var email = document.getElementById('email').value;
+  var message = document.getElementById('message').value;
+
+  console.log('Form submitted:', { name, email, message });
+
+  this.reset();
+
+  alert('Thank you for your message. I will get back to you soon!');
+});
+
 /*--------------------
 Vars
 --------------------*/
